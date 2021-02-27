@@ -1,0 +1,115 @@
+.contenedor-grid{
+	position: absolute;
+	top: 70px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 2px;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+
+.contenedor-grid .ContenedorElemento{
+	background: rgba(100,100,100,0.8);
+	padding: 4px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+.contenedor-grid .ContenedorElemento:hover {
+	background: rgba(100,100,100,0.5);
+}
+.contenedor-grid .ContenedorElementoNo{
+	background: rgba(0,0,0,0);
+	padding: 4px;
+}
+
+.modal{
+	display: none;
+}
+.modal:target{
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.95);
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100000;
+	top:70px;
+}
+.modal h3{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin: 5px 0;
+	font-family: 'Italianno', cursive;
+	font-size: 50px;
+}
+#imagen_galeria{
+	position: relative;
+	width: 100%;
+	top :50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+#imagen_galeria a{
+	position: relative;
+	color: white;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+@media(max-width: 940px){
+.contenedor-grid{
+	position: absolute;
+	top: 70px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 2px;
+	width: 100%;
+	height: 80%;
+	padding: 10px;
+}
+}
+
+@media(max-width: 700px){
+.contenedor-grid{
+	position: absolute;
+	top: 70px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 2px;
+	width: 100%;
+	height: 60%;
+	padding: 10px;
+}
+
+}
+@media(max-width: 600px){
+.contenedor-grid{
+	position: relative;
+	top: 70px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 10px;
+}
+.contenedor-grid .ContenedorElementoNo{
+	background: rgba(0,0,0,0);
+	padding: 4px;
+	display: none;
+}
+.contenedor-grid .ContenedorElemento{
+	position: relative;
+	background: rgba(100,100,100,0.8);
+	padding: 4px;
+	width: 100%;
+	height: 50px;
+}
+}
